@@ -19,25 +19,23 @@ Use <http://psysh.org/>
 
 ## Setup
 
-```sh
-$ git clone https://github.com/hexlet-boilerplates/php-package.git
-
-$ cd php-package
-
-$ make install
+```bash
+git clone https://github.com/hexlet-boilerplates/php-package.gi
+cd php-package
+make install
 ```
 
 ## Run tests
 
 ```sh
-$ make test
+make test
 ```
 
 ## Test Coverage
 
--   see `phpunit.xml`
--   <https://docs.codeclimate.com/docs/configuring-test-coverage>
--   add CC_TEST_REPORTER_ID to workflow as SECERETS ENV VARIABLE (for safety)
+* see `phpunit.xml`
+* See [codeclimate documentation](https://docs.codeclimate.com/docs/configuring-test-coverage)
+* add `CC_TEST_REPORTER_ID` to workflow as SECRETS ENV VARIABLE (for safety)
 
 [![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=php-package)
 
