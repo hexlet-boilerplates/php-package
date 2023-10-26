@@ -5,6 +5,14 @@
 [![Issue Count](https://codeclimate.com/github/hexlet-boilerplates/php-package/badges/issue_count.svg)](https://codeclimate.com/github/hexlet-boilerplates/php-package/issues)
 [![Test Coverage](https://codeclimate.com/github/hexlet-boilerplates/php-package/badges/coverage.svg)](https://codeclimate.com/github/hexlet-boilerplates/php-package/coverage)
 
+## Prerequisites
+
+* Linux, Macos, WSL
+* PHP >=8.2
+* Xdebug
+* Make
+* Git
+
 ## Addons
 
 Use <http://psysh.org/>
