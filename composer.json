@@ -15,7 +15,11 @@
   },
   "autoload": {
     "psr-4": {
-      "Php\\Package\\": "src",
+      "Php\\Package\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
       "Php\\Package\\Tests\\": "tests"
     }
   },
