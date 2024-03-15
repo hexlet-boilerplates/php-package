@@ -2,7 +2,7 @@
 
 namespace Php\Package;
 
-use Tightenco\Collect\Support\Collection;
+use Illuminate\Support\Collection;
 
 class User
 {
