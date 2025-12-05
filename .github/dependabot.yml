@@ -1,0 +1,82 @@
+---
+# Dependabot configuration
+#
+# This file configures automated dependency updates.
+# The goal is to:
+#  - keep tooling (devDependencies) up to date without noise
+#  - separate runtime (production) dependencies for safer review
+#  - reduce the number of PRs by batching minor and patch updates
+#  - highlight potentially breaking (major) updates in dedicated PRs
+#
+# Recommended documentation:
+#
+# 1) Dependabot Options Reference — full list of available keys,
+#    including "dependency-type", "groups", "update-types", etc.
+#    https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+#
+# 2) Optimizing pull request creation — best practices for grouping updates,
+#    controlling frequency, and limiting noise in development teams.
+#    https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/optimizing-pr-creation-version-updates
+#
+# These links explain *why* we split dev/prod dependencies,
+# *how* grouping works, and what update strategies GitHub recommends
+# for real-world projects.
+#
+version: 2
+updates:
+  # 1) Keep GitHub Actions workflows up to date
+  - package-ecosystem: github-actions
+    directory: /  # Look for workflow files in the repo root
+    schedule:
+      interval: weekly  # Check for updates once a week
+    labels: [dependencies, automated, actions]
+    groups:
+      actions-minor-patch:
+        # Group all non-breaking (minor + patch) updates into a single PR
+        update-types: [minor, patch]
+      actions-major:
+        # Group all major updates for Actions in a separate PR
+        # (still isolated from minor/patch changes)
+        update-types: [major]
+  # 2) Composer development dependencies (require-dev in composer.json)
+  - package-ecosystem: composer
+    directory: /  # composer.json is in the repo root
+    schedule:
+      interval: weekly  # Weekly check for Composer dev dependencies
+    labels: [dependencies, automated, dev]
+    allow:
+      # Only dependencies from "require-dev" in composer.json
+      - dependency-type: development
+    groups:
+      composer-dev-minor-patch:
+        # Group minor + patch updates for all dev dependencies into one PR
+        # Example from this project:
+        #  - phpunit/phpunit
+        #  - phpstan/phpstan
+        #  - squizlabs/php_codesniffer
+        #  - symfony/var-dumper
+        #  - phpstan/extension-installer, phpstan/phpstan-phpunit
+        update-types: [minor, patch]
+      composer-dev-major:
+        # Group all major dev dependency updates into a separate PR.
+        # This keeps potentially breaking changes isolated from minor/patch updates.
+        update-types: [major]
+  # 3) Composer runtime / production dependencies (require in composer.json)
+  - package-ecosystem: composer
+    directory: /
+    schedule:
+      interval: weekly  # Weekly check for Composer runtime dependencies
+    labels: [dependencies, automated, prod]
+    allow:
+      # Only dependencies from "require" in composer.json
+      # Example from this project:
+      #  - illuminate/collections
+      #  - nesbot/carbon
+      #  - symfony/string
+      - dependency-type: production
+    groups:
+      composer-runtime-minor-patch:
+        # Group minor + patch updates for all runtime dependencies into one PR.
+        # Major updates for these dependencies will be opened as individual PRs
+        # by default (not grouped), which makes them easier to review and test.
+        update-types: [minor, patch]
