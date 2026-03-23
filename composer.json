@@ -27,7 +27,7 @@
     }
   },
   "require": {
-    "illuminate/collections": "^12.0",
+    "illuminate/collections": "^12.0 || ^13.0",
     "nesbot/carbon": "^3.9",
     "symfony/string": "^7.2 || ^8.0"
   },
