@@ -15,7 +15,7 @@ jobs:
     steps:
         # Check-out repository under GitHub workspace
         # https://github.com/actions/checkout
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         # Step's name
       - name: Setup PHP
         # Action gives to setup the PHP environment to test application
