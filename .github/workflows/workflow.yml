@@ -31,12 +31,7 @@ jobs:
         # Run Linter
         run: make lint
 
-        # https://docs.sonarsource.com/sonarqube-cloud/enriching/test-coverage/php-test-coverage/
+        # The coverage threshold is COVERAGE_MIN in the Makefile — this step fails
+        # when coverage drops below it, so the CI badge reflects coverage too
       - name: Run tests
         run: make test-coverage
-
-      # NOTE: uncomment for use it
-      # - name: SonarQube Scan
-        # uses: SonarSource/sonarqube-scan-action@v7
-        # env:
-          # SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
