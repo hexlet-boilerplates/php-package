@@ -1,0 +1,11 @@
+version = "1"
+php-version = "8.5"
+
+[source]
+paths = ["bin", "src", "tests"]
+includes = ["vendor"]
+
+# Функции и переменные в коде Хекслета пишутся в camelCase, линтер по умолчанию
+# требует подчёркивания.
+[linter.rules.function-name]
+camel = true

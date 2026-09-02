@@ -9,11 +9,13 @@ console:
 	composer exec --verbose psysh
 
 lint:
-	composer exec --verbose phpcs -- src tests
-	composer exec --verbose phpstan
+	composer exec --verbose mago -- format --dry-run
+	composer exec --verbose mago -- lint
+	composer exec --verbose mago -- analyze
 
 lint-fix:
-	composer exec --verbose phpcbf -- src tests
+	composer exec --verbose mago -- format
+	composer exec --verbose mago -- lint --fix
 
 test:
 	composer exec --verbose phpunit tests

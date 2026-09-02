@@ -1,9 +1,0 @@
-parameters:
-    level: 8
-    paths:
-        - bin
-        - src
-        - tests
-    ignoreErrors:
-        - identifier: missingType.generics
-        - identifier: missingType.iterableValue

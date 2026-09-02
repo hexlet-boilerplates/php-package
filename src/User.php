@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Php\Package;
 
 use Illuminate\Support\Collection;

@@ -1,9 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Php\Package\Tests;
 
-use PHPUnit\Framework\TestCase;
 use Php\Package\User;
+use PHPUnit\Framework\TestCase;
 
 class UserTest extends TestCase
 {

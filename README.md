@@ -31,7 +31,7 @@ make install
 make lint
 ```
 
-See configs [php.xml](./phpcs.xml) and [phpstan.neon](./phpstan.neon)
+See config [mago.toml](./mago.toml)
 
 ## Run tests
 
