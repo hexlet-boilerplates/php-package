@@ -47,10 +47,8 @@ make test-coverage
 ```
 
 - the set of files under coverage is declared in `phpunit.xml`
-- the threshold is `COVERAGE_MIN` in the [Makefile](./Makefile) — `make test-coverage`
-  exits with an error below it, so the PHP CI badge stays green only while coverage holds
-- requires the Xdebug or PCOV extension, otherwise PHPUnit reports
-  `No code coverage driver available`
+- the threshold is `COVERAGE_MIN` in the [Makefile](./Makefile) — `make test-coverage` exits with an error below it, so the PHP CI badge stays green only while coverage holds
+- requires the Xdebug or PCOV extension, otherwise PHPUnit reports `No code coverage driver available`
 
 [![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=php-package)
 
