@@ -82,16 +82,16 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v13.31.0",
+            "version": "v13.32.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "ed3a9da8ceab848cd5ed5bf1bd1236c412905522"
+                "reference": "9cffcd3583b064dda8d4f1de36a8d961c78f92a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/ed3a9da8ceab848cd5ed5bf1bd1236c412905522",
-                "reference": "ed3a9da8ceab848cd5ed5bf1bd1236c412905522",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/9cffcd3583b064dda8d4f1de36a8d961c78f92a6",
+                "reference": "9cffcd3583b064dda8d4f1de36a8d961c78f92a6",
                 "shasum": ""
             },
             "require": {
@@ -138,11 +138,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-09-03T14:32:12+00:00"
+            "time": "2026-09-14T14:58:42+00:00"
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v13.31.0",
+            "version": "v13.32.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -188,7 +188,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v13.31.0",
+            "version": "v13.32.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -236,7 +236,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v13.31.0",
+            "version": "v13.32.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -1191,16 +1191,16 @@
         },
         {
             "name": "symfony/string",
-            "version": "v8.1.2",
+            "version": "v8.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "286a76b7255e5cc4bf0101a0bc5388ecf1c38ccc"
+                "reference": "d950140b5f56f31901e5b7a0c04ffc3a3deb943c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/286a76b7255e5cc4bf0101a0bc5388ecf1c38ccc",
-                "reference": "286a76b7255e5cc4bf0101a0bc5388ecf1c38ccc",
+                "url": "https://api.github.com/repos/symfony/string/zipball/d950140b5f56f31901e5b7a0c04ffc3a3deb943c",
+                "reference": "d950140b5f56f31901e5b7a0c04ffc3a3deb943c",
                 "shasum": ""
             },
             "require": {
@@ -1257,7 +1257,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v8.1.2"
+                "source": "https://github.com/symfony/string/tree/v8.1.7"
             },
             "funding": [
                 {
@@ -1277,7 +1277,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-07-28T07:35:25+00:00"
+            "time": "2026-09-11T14:51:16+00:00"
         },
         {
             "name": "symfony/translation",
@@ -1458,16 +1458,16 @@
     "packages-dev": [
         {
             "name": "carthage-software/mago",
-            "version": "1.48.1",
+            "version": "1.49.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/carthage-software/mago.git",
-                "reference": "4b833d559b9fc21da7c49a2458d0d057d9b2227a"
+                "reference": "bbdaf378e69114f5d9c580862c8533dd3f01c050"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/carthage-software/mago/zipball/4b833d559b9fc21da7c49a2458d0d057d9b2227a",
-                "reference": "4b833d559b9fc21da7c49a2458d0d057d9b2227a",
+                "url": "https://api.github.com/repos/carthage-software/mago/zipball/bbdaf378e69114f5d9c580862c8533dd3f01c050",
+                "reference": "bbdaf378e69114f5d9c580862c8533dd3f01c050",
                 "shasum": ""
             },
             "require": {
@@ -1509,7 +1509,7 @@
             ],
             "support": {
                 "issues": "https://github.com/carthage-software/mago/issues",
-                "source": "https://github.com/carthage-software/mago/tree/1.48.1"
+                "source": "https://github.com/carthage-software/mago/tree/1.49.0"
             },
             "funding": [
                 {
@@ -1517,7 +1517,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-09-11T05:32:18+00:00"
+            "time": "2026-09-16T05:38:39+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -2139,16 +2139,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "13.3.3",
+            "version": "13.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "0d8711067516c1f6ba1a66f762e16c2fb1a8ccd1"
+                "reference": "d19d90cf860efb7e4d96cee8243e06a248578085"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/0d8711067516c1f6ba1a66f762e16c2fb1a8ccd1",
-                "reference": "0d8711067516c1f6ba1a66f762e16c2fb1a8ccd1",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/d19d90cf860efb7e4d96cee8243e06a248578085",
+                "reference": "d19d90cf860efb7e4d96cee8243e06a248578085",
                 "shasum": ""
             },
             "require": {
@@ -2162,7 +2162,7 @@
                 "phar-io/manifest": "^2.0.4",
                 "phar-io/version": "^3.2.1",
                 "php": ">=8.4.1",
-                "phpunit/php-code-coverage": "^14.3.2",
+                "phpunit/php-code-coverage": "^14.3.3",
                 "phpunit/php-file-iterator": "^7.0.2",
                 "phpunit/php-invoker": "^7.0.0",
                 "phpunit/php-text-template": "^6.0.0",
@@ -2219,7 +2219,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/13.3.3"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/13.3.4"
             },
             "funding": [
                 {
@@ -2227,7 +2227,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2026-09-09T04:50:32+00:00"
+            "time": "2026-09-15T07:37:05+00:00"
         },
         {
             "name": "psy/psysh",
@@ -3798,16 +3798,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v8.1.6",
+            "version": "v8.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "3783365b58972f4779254d98372af80fbf15e170"
+                "reference": "741a8c4c948b0bb9bd3653daacd3644c73c40ea5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/3783365b58972f4779254d98372af80fbf15e170",
-                "reference": "3783365b58972f4779254d98372af80fbf15e170",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/741a8c4c948b0bb9bd3653daacd3644c73c40ea5",
+                "reference": "741a8c4c948b0bb9bd3653daacd3644c73c40ea5",
                 "shasum": ""
             },
             "require": {
@@ -3861,7 +3861,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v8.1.6"
+                "source": "https://github.com/symfony/var-dumper/tree/v8.1.7"
             },
             "funding": [
                 {
@@ -3881,7 +3881,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-08-30T20:10:55+00:00"
+            "time": "2026-09-03T16:02:27+00:00"
         },
         {
             "name": "theseer/tokenizer",
