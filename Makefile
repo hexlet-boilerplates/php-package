@@ -4,18 +4,19 @@ COVERAGE_MIN ?= 80
 
 install:
 	composer install
+	mise exec -- hk install --mise
 
 console:
 	composer exec --verbose psysh
 
 lint:
-	composer exec --verbose mago -- format --dry-run
-	composer exec --verbose mago -- lint
-	composer exec --verbose mago -- analyze
+	mago format --dry-run
+	mago lint
+	mago analyze
 
 lint-fix:
-	composer exec --verbose mago -- format
-	composer exec --verbose mago -- lint --fix
+	mago format
+	mago lint --fix
 
 test:
 	composer exec --verbose phpunit tests

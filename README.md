@@ -5,8 +5,8 @@
 ## Prerequisites
 
 - Linux, Macos, WSL
-- PHP >=8.2
-- Xdebug
+- [mise](https://mise.jdx.dev/), it installs PHP, Composer, mago and hk from `mise.toml`
+- Xdebug or PCOV (only for test coverage, mise does not provide them)
 - Make
 - Git
 
@@ -22,6 +22,7 @@ Setup [SSH](https://docs.github.com/en/authentication/connecting-to-github-with-
 git clone git@github.com:hexlet-boilerplates/php-package.git
 cd php-package
 
+mise install
 make install
 ```
 

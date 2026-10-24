@@ -1,0 +1,12 @@
+# Инструменты проекта. На macOS и Linux их ставит `mise install`.
+# conda-бэкенд mise считает экспериментальным, без флага php не установится.
+[settings]
+experimental = true
+
+[tools]
+"conda:php" = "latest"
+"github:composer/composer" = "latest"
+"aqua:carthage-software/mago" = "latest"
+# Инструменты для git-хуков. Хук pre-push запускает `make lint` (hk.pkl).
+hk = "latest"
+pkl = "latest"
