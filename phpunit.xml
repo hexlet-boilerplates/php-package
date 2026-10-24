@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit
-    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/11.0/phpunit.xsd"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/13.0/phpunit.xsd"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     bootstrap="vendor/autoload.php"
     backupGlobals="false"
     colors="true"
     processIsolation="false"
     stopOnFailure="true"
-    cacheResult="false"
+    recordTestRunHistory="false"
     backupStaticProperties="false"
     testdox="true"
     stopOnDefect="true"

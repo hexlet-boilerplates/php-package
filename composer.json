@@ -34,7 +34,6 @@
     "require-dev": {
         "psy/psysh": "@stable",
         "symfony/var-dumper": "^7.2 || ^8.0",
-        "phpunit/phpunit": "^11.5 || ^13.0",
-        "carthage-software/mago": "^1.47"
+        "phpunit/phpunit": "^13.0"
     }
 }
