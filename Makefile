@@ -13,6 +13,9 @@ lint:
 	mago format --dry-run
 	mago lint
 	mago analyze
+	rumdl check .
+	typos
+	jactionlint
 
 lint-fix:
 	mago format

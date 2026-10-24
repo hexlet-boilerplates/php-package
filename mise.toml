@@ -8,5 +8,9 @@ experimental = true
 "github:composer/composer" = "latest"
 "aqua:carthage-software/mago" = "latest"
 # hk запускает проверки в git-хуках и в CI (hk.pkl), pkl нужен ему для чтения конфига.
+rumdl = "latest"
+typos = "latest"
+jactionlint = "latest"
+shellcheck = "latest"
 hk = "latest"
 pkl = "latest"

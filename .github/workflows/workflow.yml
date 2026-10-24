@@ -3,14 +3,24 @@ name: PHP CI
 
 # Trigger the workflow on push or pull request
 on:
-  - push
-  - pull_request
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
 
     # The type of machine to run the job on
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     # PHP с драйвером покрытия приходит из setup-php, поэтому mise не должен
     # ставить свой conda:php ни в mise-action, ни через шимы в следующих шагах
@@ -21,6 +31,8 @@ jobs:
         # Check-out repository under GitHub workspace
         # https://github.com/actions/checkout
       - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
       # Драйвер покрытия (Xdebug) в mise поставить нечем, поэтому PHP для CI
       # приходит из setup-php, а mise ставит остальное: composer, mago и hk
       # https://github.com/shivammathur/setup-php
