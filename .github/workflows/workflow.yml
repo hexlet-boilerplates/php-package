@@ -12,6 +12,11 @@ jobs:
     # The type of machine to run the job on
     runs-on: ubuntu-latest
 
+    # PHP с драйвером покрытия приходит из setup-php, поэтому mise не должен
+    # ставить свой conda:php ни в mise-action, ни через шимы в следующих шагах
+    env:
+      MISE_DISABLE_TOOLS: conda:php
+
     steps:
         # Check-out repository under GitHub workspace
         # https://github.com/actions/checkout
@@ -28,8 +33,6 @@ jobs:
       # Ставит composer, mago и hk из mise.toml, версии зафиксированы в mise.lock
       # https://github.com/jdx/mise-action
       - uses: jdx/mise-action@v5
-        env:
-          MISE_DISABLE_TOOLS: conda:php
       - name: Install
         # Install project
         run: make install
