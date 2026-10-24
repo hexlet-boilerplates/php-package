@@ -7,6 +7,6 @@ experimental = true
 "conda:php" = "latest"
 "github:composer/composer" = "latest"
 "aqua:carthage-software/mago" = "latest"
-# Инструменты для git-хуков. Хук pre-push запускает `make lint` (hk.pkl).
+# hk запускает проверки в git-хуках и в CI (hk.pkl), pkl нужен ему для чтения конфига.
 hk = "latest"
 pkl = "latest"

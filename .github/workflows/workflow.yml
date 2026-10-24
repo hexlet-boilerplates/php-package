@@ -36,9 +36,9 @@ jobs:
       - name: Install
         # Install project
         run: make install
-      - name: Run linter
-        # Run Linter
-        run: make lint
+      - name: Run checks
+        # Те же шаги, что в git-хуке (hk.pkl)
+        run: mise exec -- hk check --all
 
         # The coverage threshold is COVERAGE_MIN in the Makefile — this step fails
         # when coverage drops below it, so the CI badge reflects coverage too

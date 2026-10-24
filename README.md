@@ -26,6 +26,8 @@ mise install
 make install
 ```
 
+`make install` also installs the git hooks: `hk` runs the checks before a commit and the tests before a push.
+
 ## Run linter
 
 ```sh
