@@ -27,13 +27,10 @@
         }
     },
     "require": {
-        "illuminate/collections": "^12.0 || ^13.0",
-        "nesbot/carbon": "^3.9",
-        "symfony/string": "^7.2 || ^8.0"
+        "illuminate/collections": "^12.0 || ^13.0"
     },
     "require-dev": {
         "psy/psysh": "@stable",
-        "symfony/var-dumper": "^7.2 || ^8.0",
         "phpunit/phpunit": "^13.0"
     }
 }
