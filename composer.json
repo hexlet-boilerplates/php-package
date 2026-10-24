@@ -1,6 +1,5 @@
 {
     "name": "hexlet/php-package",
-    "version": "0.0.1",
     "bin": [
         "bin/php-package"
     ],
